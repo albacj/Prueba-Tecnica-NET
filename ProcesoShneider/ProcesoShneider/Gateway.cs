@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations; // IP required
 
 namespace ProcesoShneider
 {
@@ -41,7 +42,9 @@ namespace ProcesoShneider
 
         // Properties of this class
 
+        [Required(ErrorMessage ="IP is required.")]
         string ip { get; set; }
+ 
         int port { get; set; }
     }
 }
