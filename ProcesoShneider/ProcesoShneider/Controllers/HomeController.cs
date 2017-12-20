@@ -32,12 +32,23 @@ namespace ProcesoShneider.Controllers
         public ActionResult Create()
         {
             return View();
+
+            //if (!ModelState.IsValid)
+            //{
+            //    return View();
+            //}
+            //else
+            //{
+            //    return RedirectToAction("Index");
+            //}
         }
 
         // POST: Home/Create
         [HttpPost]
         public ActionResult Create([Bind(Exclude = "Id")] Device deviceToCreate)
         {
+            //return View();
+        
             if (!ModelState.IsValid)
             {
                 return View();
