@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ProcesoShneider.Controllers;
 
 namespace ProcesoShneider.Controllers
 {
     public class HomeController : Controller
     {
+
+        private Models.DevicesDBEntities _db = new Models.DevicesDBEntities();
+
         // GET: Home
+        // This is a default method
+        // When this app runs, this is the first method
         public ActionResult Index()
         {
-            return View();
+
+            return View(_db.WaterAndLightMeter.ToList()); // return WaterAndLightMeter table
+
         }
 
         // GET: Home/Details/5
