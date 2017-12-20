@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations; // For required properties ID and S
 
 namespace ProcesoShneider
 {
-    interface Device
+    public interface Device
     {
         // parameters
 

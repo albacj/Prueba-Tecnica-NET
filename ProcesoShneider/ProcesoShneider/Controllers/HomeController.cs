@@ -36,17 +36,15 @@ namespace ProcesoShneider.Controllers
 
         // POST: Home/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create([Bind(Exclude = "Id")] Device deviceToCreate)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
+            if (!ModelState.IsValid)
             {
                 return View();
+            }
+            else
+            {
+                return RedirectToAction("Index");
             }
         }
 
