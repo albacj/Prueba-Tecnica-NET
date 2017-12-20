@@ -63,22 +63,36 @@ namespace ProcesoShneider.Controllers
         public ActionResult Edit(int id)
         {
             return View();
+
+            var deviceToEdit = (from d in _db.WaterAndLightMeter
+
+                               where d.Id == id
+
+                               select d).First();
+
+            return View(deviceToEdit);
         }
 
         // POST: Home/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Device deviceToEdit)
         {
-            try
-            {
-                // TODO: Add update logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var originalDevice = (from d in _db.WaterAndLightMeter
+
+                                 where d.Id == deviceToEdit.id
+
+                                 select d).First();
+
+            if (!ModelState.IsValid)
+
+                return View(originalDevice);
+
+            //_db.ApplyPropertyChanges(originalDevice.EntityKey.EntitySetName, deviceToEdit);
+
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
         // GET: Home/Delete/5
