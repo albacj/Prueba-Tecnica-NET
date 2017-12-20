@@ -51,3 +51,8 @@ C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\es\
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csprojResolveAssemblyReference.cache
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.pdb
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.dll
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.dll
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.xml
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.xml
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csproj.CoreCompileInputs.cache
