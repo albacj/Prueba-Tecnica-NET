@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ProcesoShneider.Controllers;
+using System.Web.UI.WebControls;
+using System.Web.Routing;
 
 namespace ProcesoShneider.Controllers
 {
@@ -12,13 +14,38 @@ namespace ProcesoShneider.Controllers
 
         private Models.DevicesDBEntities _db = new Models.DevicesDBEntities();
 
+        // View for Water and Light Meter
+        public PartialViewResult WaterMeter()
+        {
+            return PartialView("WaterMeter", new WaterMeter() );
+        }
+
+        public PartialViewResult LightMeter()
+        {
+            return PartialView("LightMeter", new LightMeter());
+        }
+
+        public PartialViewResult GatewayMeter()
+        {
+            return PartialView("GatewayMeter", new Gateway());
+        }
+
+        
+
         // GET: Home
         // This is a default method
         // When this app runs, this is the first method
         public ActionResult Index()
         {
 
-            return View(_db.WaterAndLightMeter.ToList()); // return WaterAndLightMeter table
+            return View();
+            //return View(_db.WaterAndLightMeter.ToList()); // return WaterAndLightMeter table
+            //return MultiView(View(_db.WaterAndLightMeter.ToList()), View(_db.Gateway.ToList()));
+
+            //var viewWL = View(_db.WaterAndLightMeter.ToList());
+            //var viewG = View(_db.Gateway.ToList());
+
+            //return viewWL, viewG;
 
         }
 
@@ -47,16 +74,16 @@ namespace ProcesoShneider.Controllers
         [HttpPost]
         public ActionResult Create([Bind(Exclude = "Id")] Device deviceToCreate)
         {
-            //return View();
+            return View();
         
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return View();
+            //}
+            //else
+            //{
+            //    return RedirectToAction("Index");
+            //}
         }
 
         // GET: Home/Edit/5
@@ -64,13 +91,13 @@ namespace ProcesoShneider.Controllers
         {
             return View();
 
-            var deviceToEdit = (from d in _db.WaterAndLightMeter
+            //var deviceToEdit = (from d in _db.WaterAndLightMeter
+            //
+            //                   where d.Id == id
+            //
+            //                   select d).First();
 
-                               where d.Id == id
-
-                               select d).First();
-
-            return View(deviceToEdit);
+            //return View(deviceToEdit);
         }
 
         // POST: Home/Edit/5
@@ -78,19 +105,19 @@ namespace ProcesoShneider.Controllers
         public ActionResult Edit(Device deviceToEdit)
         {
 
-            var originalDevice = (from d in _db.WaterAndLightMeter
+            //var originalDevice = (from d in _db.WaterAndLightMeter
+            //
+            //                     where d.Id == deviceToEdit.id
+            //
+            //                     select d).First();
 
-                                 where d.Id == deviceToEdit.id
-
-                                 select d).First();
-
-            if (!ModelState.IsValid)
-
-                return View(originalDevice);
+            //if (!ModelState.IsValid)
+            //
+            //    return View(originalDevice);
 
             //_db.ApplyPropertyChanges(originalDevice.EntityKey.EntitySetName, deviceToEdit);
 
-            _db.SaveChanges();
+            //_db.SaveChanges();
 
             return RedirectToAction("Index");
         }

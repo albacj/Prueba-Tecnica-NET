@@ -1,45 +1,12 @@
-﻿@model IEnumerable<ProcesoShneider.Models.WaterAndLightMeter>
-
+﻿
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Devices</h2>
+<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Serial_Number)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Brand)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Model)
-        </th>
-        <th></th>
-    </tr>
+<div>@Html.Action("WaterMeter")</div><br />
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Serial_Number)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Brand)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+<div>@Html.Action("LightMeter")</div><br />
 
-</table>
+<div>@Html.Action("GatewayMeter")</div>
