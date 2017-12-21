@@ -12,22 +12,24 @@ namespace ProcesoShneider.Controllers
     public class HomeController : Controller
     {
 
-        private Models.DevicesDBEntities _db = new Models.DevicesDBEntities();
+        //private Models.DevicesDBEntities _db = new Models.DevicesDBEntities();
 
-        // View for Water and Light Meter
+        // View for Water
         public PartialViewResult WaterMeter()
         {
-            return PartialView("WaterMeter", new WaterMeter() );
+            return PartialView("WaterMeter", new List<ProcesoShneider.Models.WaterAndLightMeter>());
         }
 
+        // View for Light
         public PartialViewResult LightMeter()
         {
-            return PartialView("LightMeter", new LightMeter());
+            return PartialView("LightMeter", new List<ProcesoShneider.Models.WaterAndLightMeter>());
         }
 
+        // View for Gateway
         public PartialViewResult GatewayMeter()
         {
-            return PartialView("GatewayMeter", new Gateway());
+            return PartialView("GatewayMeter", new List<ProcesoShneider.Models.Gateway>());
         }
 
         
