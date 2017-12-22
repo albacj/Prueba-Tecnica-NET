@@ -1,4 +1,4 @@
-﻿@model List<ProcesoShneider.Models.WaterAndLightMeter>
+﻿@model List<ProcesoShneider.Models.WaterMeter>
 
 <h4>Water Meter</h4>
 
@@ -19,7 +19,7 @@
         <th></th>
     </tr>
 
-@foreach (ProcesoShneider.Models.WaterAndLightMeter item in Model){
+@foreach (ProcesoShneider.Models.WaterMeter item in Model){
     <tr>
         <td>
             @(item.Serial_Number)
@@ -32,7 +32,7 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Details", "WaterMeterDetails", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>

@@ -1,7 +1,7 @@
-﻿CREATE TABLE [dbo].[WaterMeter]
+﻿CREATE TABLE [dbo].[Table]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [SerialNumber] NVARCHAR(50) NOT NULL, 
+    [Serial_Number] NVARCHAR(50) NOT NULL, 
     [Brand] NVARCHAR(50) NULL, 
     [Model] NVARCHAR(50) NULL
 )

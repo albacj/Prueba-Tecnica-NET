@@ -1,3 +1,5 @@
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\roslyn\csc.exe
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\roslyn\csc.exe.config
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\roslyn\csc.rsp
@@ -49,7 +51,5 @@ C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\b
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\es\System.Web.WebPages.resources.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.csprojResolveAssemblyReference.cache
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider.Tests\obj\Debug\ProcesoShneider.Tests.pdb

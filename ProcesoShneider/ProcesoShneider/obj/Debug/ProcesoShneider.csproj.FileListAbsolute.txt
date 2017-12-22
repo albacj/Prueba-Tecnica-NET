@@ -1,3 +1,4 @@
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csproj.CoreCompileInputs.cache
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\roslyn\csc.exe
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\roslyn\csc.exe.config
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\roslyn\csc.rsp
@@ -27,6 +28,8 @@ C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\ros
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\ProcesoShneider.dll.config
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\ProcesoShneider.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\ProcesoShneider.pdb
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.dll
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Helpers.dll
@@ -35,6 +38,8 @@ C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\Sys
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Webpages.Deployment.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Webpages.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Webpages.Razor.dll
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.xml
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.xml
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Razor.xml
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\System.Web.Webpages.xml
@@ -48,11 +53,6 @@ C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\es\
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\es\System.Web.Helpers.resources.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\es\System.Web.Mvc.resources.dll
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csprojResolveAssemblyReference.cache
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.dll
 C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.pdb
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.dll
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.dll
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.xml
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\bin\EntityFramework.SqlServer.xml
-C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csproj.CoreCompileInputs.cache
+C:\Users\Alba\Documents\Prueba Schneider\ProcesoShneider\ProcesoShneider\obj\Debug\ProcesoShneider.csprojResolveAssemblyReference.cache

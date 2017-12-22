@@ -1,0 +1,24 @@
+﻿@model ProcesoShneider.Models.Gateway
+@{
+    ViewBag.Title = "Gateway Details";
+}
+
+<h2>View</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Gateway details</div>
+    <div class="panel-body">
+        <dl class="dl-horizontal">
+            <dt>Serial Number</dt>
+            <dd>@Model.SerialNumber</dd>
+            <dt>Brand</dt>
+            <dd>@(Model.Brand)</dd>
+            <dt>Model</dt>
+            <dd>@Model.Model</dd>
+            <dt>IP</dt>
+            <dd>@(Model.Ip)</dd>
+            <dt>Port</dt>
+            <dd>@Model.Port</dd>
+        </dl>
+    </div>
+</div>

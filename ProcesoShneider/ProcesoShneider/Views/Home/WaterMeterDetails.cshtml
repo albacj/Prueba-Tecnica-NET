@@ -1,0 +1,20 @@
+﻿@model ProcesoShneider.Models.WaterMeter
+@{
+    ViewBag.Title = "Water Meter Details";
+}
+
+<h2>View</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Water meter details</div>
+    <div class="panel-body">
+        <dl class="dl-horizontal">
+            <dt>Serial Number</dt>
+            <dd>@Model.Serial_Number</dd>
+            <dt>Brand</dt>
+            <dd>@(Model.Brand)</dd>
+            <dt>Model</dt>
+            <dd>@Model.Model</dd>
+        </dl>
+    </div>
+</div>

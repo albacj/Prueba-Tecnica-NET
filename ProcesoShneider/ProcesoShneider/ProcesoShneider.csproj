@@ -106,16 +106,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\DevicesDBModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DevicesDBModel.Context.cs</LastGenOutput>
-      <DependentUpon>DevicesDBModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\DevicesDBModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DevicesDBModel.edmx</DependentUpon>
-      <LastGenOutput>DevicesDBModel.cs</LastGenOutput>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -141,40 +131,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LightMeter.cs" />
-    <Compile Include="Models\DevicesDBModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DevicesDBModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DevicesDBModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DevicesDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DevicesDBModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DevicesDBModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Gateway.cs">
-      <DependentUpon>DevicesDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\WaterAndLightMeter.cs">
-      <DependentUpon>DevicesDBModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\DBContext.cs" />
+    <Compile Include="Models\Gateway.cs" />
+    <Compile Include="Models\LightMeter.cs" />
+    <Compile Include="Models\WaterMeter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WaterMeter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <EntityDeploy Include="Models\DevicesDBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DevicesDBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DevicesDBModel.edmx.diagram">
-      <DependentUpon>DevicesDBModel.edmx</DependentUpon>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -182,6 +148,9 @@
     <Content Include="Views\Home\WaterMeter.cshtml" />
     <Content Include="Views\Home\LightMeter.cshtml" />
     <Content Include="Views\Home\GatewayMeter.cshtml" />
+    <Content Include="Views\Home\WaterMeterDetails.cshtml" />
+    <Content Include="Views\Home\LightMeterDetails.cshtml" />
+    <Content Include="Views\Home\GatewayDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

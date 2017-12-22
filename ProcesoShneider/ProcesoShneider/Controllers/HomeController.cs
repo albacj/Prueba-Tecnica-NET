@@ -9,141 +9,75 @@ using System.Web.Routing;
 
 namespace ProcesoShneider.Controllers
 {
+
+    using Models;
+
     public class HomeController : Controller
     {
 
-        //private Models.DevicesDBEntities _db = new Models.DevicesDBEntities();
+        public ActionResult Index()
+        {
+            return View();
+        }
 
         // View for Water
-        public PartialViewResult WaterMeter()
+        public PartialViewResult WaterMeterView()
         {
-            return PartialView("WaterMeter", new List<ProcesoShneider.Models.WaterAndLightMeter>());
+            return PartialView("WaterMeter", WaterMeter.GetAll());
         }
 
         // View for Light
-        public PartialViewResult LightMeter()
+        public PartialViewResult LightMeterView()
         {
-            return PartialView("LightMeter", new List<ProcesoShneider.Models.WaterAndLightMeter>());
+            return PartialView("LightMeter", LightMeter.GetAll());
         }
 
         // View for Gateway
-        public PartialViewResult GatewayMeter()
+        public PartialViewResult GatewayMeterView()
         {
-            return PartialView("GatewayMeter", new List<ProcesoShneider.Models.Gateway>());
+            return PartialView("GatewayMeter", Gateway.GetAll());
         }
 
-        
-
-        // GET: Home
-        // This is a default method
-        // When this app runs, this is the first method
-        public ActionResult Index()
+        public ActionResult WaterMeterDetails(int id)
         {
-
-            return View();
-            //return View(_db.WaterAndLightMeter.ToList()); // return WaterAndLightMeter table
-            //return MultiView(View(_db.WaterAndLightMeter.ToList()), View(_db.Gateway.ToList()));
-
-            //var viewWL = View(_db.WaterAndLightMeter.ToList());
-            //var viewG = View(_db.Gateway.ToList());
-
-            //return viewWL, viewG;
-
-        }
-
-        // GET: Home/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Home/Create
-        public ActionResult Create()
-        {
-            return View();
-
-            //if (!ModelState.IsValid)
-            //{
-            //    return View();
-            //}
-            //else
-            //{
-            //    return RedirectToAction("Index");
-            //}
-        }
-
-        // POST: Home/Create
-        [HttpPost]
-        public ActionResult Create([Bind(Exclude = "Id")] Device deviceToCreate)
-        {
-            return View();
-        
-            //if (!ModelState.IsValid)
-            //{
-            //    return View();
-            //}
-            //else
-            //{
-            //    return RedirectToAction("Index");
-            //}
-        }
-
-        // GET: Home/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-
-            //var deviceToEdit = (from d in _db.WaterAndLightMeter
-            //
-            //                   where d.Id == id
-            //
-            //                   select d).First();
-
-            //return View(deviceToEdit);
-        }
-
-        // POST: Home/Edit/5
-        [HttpPost]
-        public ActionResult Edit(Device deviceToEdit)
-        {
-
-            //var originalDevice = (from d in _db.WaterAndLightMeter
-            //
-            //                     where d.Id == deviceToEdit.id
-            //
-            //                     select d).First();
-
-            //if (!ModelState.IsValid)
-            //
-            //    return View(originalDevice);
-
-            //_db.ApplyPropertyChanges(originalDevice.EntityKey.EntitySetName, deviceToEdit);
-
-            //_db.SaveChanges();
-
-            return RedirectToAction("Index");
-        }
-
-        // GET: Home/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Home/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
+            WaterMeter waterMeter = WaterMeter.GetByID(id);
+            if (waterMeter != null)
             {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                return View("WaterMeterDetails", waterMeter);
             }
-            catch
+            else
             {
-                return View();
+                return Redirect("Index");
             }
         }
+
+        public ActionResult LightMeterDetails(int id)
+        {
+            LightMeter lightMeter = LightMeter.GetByID(id);
+            if (lightMeter != null)
+            {
+                return View("LightMeterDetails", lightMeter);
+            }
+            else
+            {
+                return Redirect("Index");
+            }
+        }
+
+        public ActionResult GatewayDetails(int id)
+        {
+            Gateway gateway = Gateway.GetByID(id);
+            if (gateway != null)
+            {
+                return View("GatewayDetails", gateway);
+            }
+            else
+            {
+                return Redirect("Index");
+            }
+        }
+
+
+
     }
 }
